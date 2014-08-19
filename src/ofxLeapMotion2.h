@@ -398,6 +398,12 @@ public:
         return ofPoint(v.x, v.y, v.z);
     }
     
+    //--------------------------------------------------------------
+    ImageList getImageList(){
+        ourController->setPolicyFlags(Leap::Controller::POLICY_IMAGES);
+        return ourController->frame().images();
+    }
+    
 protected:
     
     //if you want to use the Leap Controller directly - inhereit ofxLeapMotion and implement this function
