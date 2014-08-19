@@ -24,7 +24,7 @@ void ofApp::draw(){
             leapImage.draw(i * image.width(), image.height(), image.width(), image.height());
         }
     }
-    ofSetColor(255);
+
     ofDrawBitmapString(ofToString(ofGetFrameRate()) + " fps", 10, 10);
 }
 
