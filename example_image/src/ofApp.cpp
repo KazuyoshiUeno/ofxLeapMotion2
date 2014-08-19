@@ -3,12 +3,12 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofBackground(0);
-	leap.open();
+    leap.open();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+    
 }
 
 //--------------------------------------------------------------
@@ -24,7 +24,7 @@ void ofApp::draw(){
             leapImage.draw(i * image.width(), image.height(), image.width(), image.height());
         }
     }
-
+    
     ofDrawBitmapString(ofToString(ofGetFrameRate()) + " fps", 10, 10);
 }
 
